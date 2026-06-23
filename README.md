@@ -7,16 +7,7 @@
 
 An **AI-powered Intelligent Healthcare System** for automated eye disease detection and classification using lightweight deep learning and explainable artificial intelligence.
 
-This repository provides:
-
-✅ Source Code
-✅ Custom Annotated Dataset
-✅ Trained Models
-✅ Experimental Results
-✅ Explainable AI Visualizations
-✅ Research Manuscript
-
-The proposed framework is designed for:
+The proposed framework is designed to support:
 
 * Telemedicine
 * Smart Healthcare
@@ -28,14 +19,21 @@ The proposed framework is designed for:
 
 # 🌟 Highlights
 
-* Lightweight YOLOv8-based architecture
-* Real-time disease detection
-* Expert-annotated clinical eye image dataset
-* Four-class eye disease classification
-* Explainable AI using Eigen-CAM
-* Compact and efficient model
-* Suitable for mobile and edge deployment
-* Designed for resource-limited healthcare environments
+✅ Lightweight YOLOv8-based architecture
+
+✅ Real-time eye disease detection
+
+✅ Expert-annotated clinical eye image dataset
+
+✅ Four-class disease classification
+
+✅ Explainable AI using Eigen-CAM
+
+✅ Lightweight and computationally efficient
+
+✅ Suitable for mobile and edge deployment
+
+✅ Designed for resource-limited healthcare environments
 
 ---
 
@@ -55,29 +53,19 @@ The proposed framework is designed for:
 ```text
 AI-Based-Intelligent-Healthcare-System/
 
+├── .gitignore
+
+├── AI-Based Intelligent Healthcare System for Real-Time Eye Disease Detection.mp4
+
 ├── AI_Based_Intelligent_Healthcare_System.ipynb
-
-├── dataset/
-│   └── conjunctivitis_dataset.zip
-
-├── models/
-│   └── yolov8_best.pt
-
-├── figures/
-│   ├── data_collection_and_sample_images.png
-│   ├── ai_healthcare_detection_result.png
-│   ├── confusion_matrix.png
-│   ├── eigen_cam_detection_result.png
-│   └── system_architecture.png
-
-├── paper/
-│   └── AI_Healthcare_Research_Manuscript.pdf
-
-├── requirements.txt
 
 ├── LICENSE
 
-└── README.md
+├── README.md
+
+├── healthcare_dataset_collection.png
+
+└── real_time_eye_disease_detection.png
 ```
 
 ---
@@ -94,7 +82,7 @@ The custom-curated clinical dataset contains:
 | Image Type   |     Clinical Eye Images |
 | Classes      |                       4 |
 
-### Classes
+### Disease Classes
 
 | Class | Description        |
 | ----- | ------------------ |
@@ -107,17 +95,17 @@ The custom-curated clinical dataset contains:
 
 # 🤖 Model
 
-The proposed framework employs **YOLOv8** as the backbone architecture due to its excellent balance between:
+The proposed framework employs a lightweight **YOLOv8** architecture due to its excellent balance between:
 
 * Accuracy
-* Lightweight Design
 * Computational Efficiency
+* Lightweight Design
 * Real-Time Performance
 
 ### Performance Features
 
 * High Detection Accuracy
-* Lightweight Model Architecture
+* Lightweight Architecture
 * Real-Time Inference
 * Edge Device Compatibility
 * Explainable Predictions
@@ -125,7 +113,7 @@ The proposed framework employs **YOLOv8** as the backbone architecture due to it
 
 ---
 
-# 🔍 Explainable AI
+# 🔍 Explainable Artificial Intelligence
 
 To improve transparency and clinical trust, the system integrates:
 
@@ -133,39 +121,39 @@ To improve transparency and clinical trust, the system integrates:
 * Saliency Visualization
 * Heatmap Analysis
 
-These methods identify important image regions contributing to the final prediction and support clinically interpretable diagnosis.
+These techniques identify important image regions responsible for model predictions and support clinically interpretable diagnosis.
 
 ---
 
-# 🖼 Figures
+# 🖼 Healthcare Dataset Collection
 
-### Data Collection and Sample Images
+![Healthcare Dataset Collection](healthcare_dataset_collection.png)
 
-```text
-figures/data_collection_and_sample_images.png
-```
-
-Clinical image acquisition and representative samples used for AI model development.
+Clinical image acquisition and representative eye images used for model development.
 
 ---
 
-### AI Detection Results
+# 🖼 Real-Time Eye Disease Detection
 
-```text
-figures/ai_healthcare_detection_result.png
-```
+![Real-Time Eye Disease Detection](real_time_eye_disease_detection.png)
 
-Real-time prediction and disease localization using AI.
+Real-time AI prediction and disease localization using explainable artificial intelligence.
 
 ---
 
-### Explainability Results
+# 🎥 System Demonstration
 
-```text
-figures/eigen_cam_detection_result.png
-```
+**Video:**
 
-Eigen-CAM visualization highlighting important image regions responsible for model predictions.
+`AI-Based Intelligent Healthcare System for Real-Time Eye Disease Detection.mp4`
+
+The video demonstrates:
+
+* Clinical image acquisition
+* Dataset preparation
+* Real-time disease prediction
+* Explainable AI visualization
+* Automated healthcare workflow
 
 ---
 
@@ -195,23 +183,20 @@ Open the notebook:
 AI_Based_Intelligent_Healthcare_System.ipynb
 ```
 
-or run:
+Run all notebook cells sequentially to:
 
-```bash
-python train.py
-```
-
-For prediction:
-
-```bash
-python predict.py
-```
+* Load the dataset
+* Preprocess images
+* Train the model
+* Evaluate performance
+* Visualize explainability results
+* Perform real-time prediction
 
 ---
 
 # 📄 Research Status
 
-This repository contains the implementation, dataset, and experimental results of an **AI-Based Intelligent Healthcare System** for automated eye disease detection and classification.
+This repository contains the implementation and experimental results of an **AI-Based Intelligent Healthcare System** for automated eye disease detection and classification.
 
 The associated research manuscript is currently **under peer review** in an international journal.
 
@@ -223,8 +208,6 @@ This repository is maintained to promote:
 * Real-Time Clinical Decision Support
 * Collaboration Among Researchers and Healthcare Professionals
 
-Updates regarding the manuscript and related publications will be added upon acceptance.
-
 ---
 
 # 👨‍🔬 Authors
@@ -232,6 +215,7 @@ Updates regarding the manuscript and related publications will be added upon acc
 ### Saima Kanwal †
 
 Engineering Research Centre of Optical Instrument and Systems
+
 University of Shanghai for Science and Technology, Shanghai, China
 
 ---
@@ -239,6 +223,7 @@ University of Shanghai for Science and Technology, Shanghai, China
 ### Muhammad Abdullah †
 
 Faculty of Computing
+
 The Islamia University of Bahawalpur, Pakistan
 
 ---
@@ -246,6 +231,7 @@ The Islamia University of Bahawalpur, Pakistan
 ### Sahil Kumar
 
 Department of Computer Science
+
 SZABIST University Larkana Campus, Pakistan
 
 ---
@@ -253,20 +239,47 @@ SZABIST University Larkana Campus, Pakistan
 ### Santosh Kumar
 
 Bolan Medical Complex Hospital
+
 Quetta, Pakistan
+
+---
+
+### Salamat Ali
+
+Faculty of Engineering
+
+The Islamia University of Bahawalpur, Pakistan
+
+---
+
+### Adeel Asgher
+
+Faculty of Computing
+
+The Islamia University of Bahawalpur, Pakistan
+
+---
+
+### Muhammad Shahroz
+
+Faculty of Engineering
+
+The Islamia University of Bahawalpur, Pakistan
 
 ---
 
 ### Dawei Zhang
 
-University of Shanghai for Science and Technology
-Shanghai, China
+Engineering Research Centre of Optical Instrument and Systems
+
+University of Shanghai for Science and Technology, Shanghai, China
 
 ---
 
 ### Dileep Kumar *
 
 Faculty of Engineering
+
 The Islamia University of Bahawalpur, Pakistan
 
 ---
